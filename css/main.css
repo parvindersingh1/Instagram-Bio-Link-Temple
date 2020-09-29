@@ -1,0 +1,133 @@
+.img img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    animation: breath 2s linear infinite;
+    
+}
+body{
+    background: rgb(197, 197, 224);
+}
+h6,h5{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about p{
+    max-width: 350px;
+    margin: 20px auto 0  auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serifs;
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom: 5px solid rgb(116, 158, 248);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: justify;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.links a{
+    /* background: red; */
+    box-shadow: 8px 8px 8px  rgba(98, 98, 99, 0.5);
+    margin: 15px auto;
+    cursor: pointer;
+    padding: 8px 70px 8px 70px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255) !important;
+    font-size: 20px;
+ 
+}
+
+.social .icon svg {
+    height: 25px;
+    width: 25px;
+    margin-right: 5px ;
+    margin-top: 7px ;
+    fill: rgb(20, 57, 223);
+
+    
+}
+.social a label{
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255) !important;
+    font-size: 20px;
+
+
+}
+
+.social:hover svg{
+    animation: rotate 0.5s linear 1;
+
+}
+
+footer{
+    height: 70px;
+    width: 100vw;
+    background: rgba(255, 255, 255,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid rgb(108, 226, 226);
+    margin-top: 100px;
+    
+}
+
+
+@keyframes rotate{
+    0%{
+       transform: rotate(0deg);
+       transform: scale(10);
+       
+    }
+    25%{
+        transform: rotate(-30deg);
+        transform: scale(20);
+        fill: red;
+    }
+    50%{
+        transform: rotate(0deg);
+        transform: scale(30);
+        fill: green;
+    }
+    75%{
+        transform: rotate(30deg);
+        transform: scale(40);
+        fill: yellow;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform: scale(50);
+        fill: rgb(255, 0, 212);
+        opacity: 0;
+    }
+}
+
+@keyframes breath {
+    0%{
+        box-shadow: 0 0 0 5px rgba(0, 0, 255, 0.1),
+                    0 0 0 10px rgb(0, 0, 255, 0.1),
+                    0 0 0 20px rgb(0, 0, 255, 0.1),
+                    0 0 0 30px rgba(0, 0, 255, 0.1),
+                    0 0 0 40px rgba(0, 0, 255, 0.1);
+        }
+    50%{
+        box-shadow: 0 0 0 7px rgba(0, 0, 255, 0.1),
+                    0 0 0 14px rgba(0, 0, 255, 0.1),
+                    0 0 0 28px rgba(0, 0, 255, 0.1),
+                    0 0 0 42px rgba(0, 0, 255, 0.1),
+                    0 0 0 56px rgba(0, 0, 255, 0.1);
+        }
+    100%{
+        box-shadow: 0 0 0 5px rgba(0, 0, 255, 0.1),
+                    0 0 0 10px rgba(0, 0, 255, 0.1),
+                    0 0 0 20px rgba(0, 0, 255, 0.1),
+                    0 0 0 30px rgba(0, 0, 255, 0.1),
+                    0 0 0 40px rgba(0, 0, 255, 0.1);
+        }
+}
